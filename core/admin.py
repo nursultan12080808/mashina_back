@@ -19,7 +19,7 @@ class CarAdminForm(forms.ModelForm):
         fields = '__all__'
 
 
-@admin.register(Car)
+@admin.register(Car)    
 class CarAdmin(admin.ModelAdmin):
     list_display = ('id', 'madel', 'year', 'get_image')
     list_display_links = ('id', 'madel')

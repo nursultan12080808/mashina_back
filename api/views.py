@@ -5,8 +5,6 @@ from django.contrib.auth.hashers import check_password
 from django.contrib.auth import authenticate
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status, filters
-from rest_framework.decorators import api_view
-from rest_framework.generics import get_object_or_404
 from api.filters import CarFilter
 from rest_framework.response import Response
 from api.filters import CarFilter
